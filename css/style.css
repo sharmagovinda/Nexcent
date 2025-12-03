@@ -241,6 +241,10 @@ a {
 .site-header {
   padding: 22px 0;
 }
+
+.stickyHeader {
+  background-color: white !important;
+}
 .navbar {
   display: flex;
   flex-wrap: wrap;
