@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+  //  for sticky header
+
   const stickyHeader = function () {
     const height = $(window).scrollTop();
     const header = $('.site-header');
@@ -36,5 +38,19 @@ jQuery(document).ready(function ($) {
       paddingEl2();
     }, 1000);
   });
+
+  //  for Hamberger Menu
+
+  let hambugerMenu = () => {
+    let burgerButton = $('#hamburger');
+    let toggleMenu = $('#site-navigation');
+
+    burgerButton.on('click', function () {
+      $(this).toggleClass('active');
+      toggleMenu.toggleClass('active');
+    });
+  }
+
+  hambugerMenu();
 
 });
