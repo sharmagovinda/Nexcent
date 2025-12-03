@@ -109,7 +109,9 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: normal;
+  background-color: #fff;
+  color: #717171;
 }
 
 ol,
@@ -136,8 +138,10 @@ table {
 }
 
 .container {
-  max-width: 1280px;
-  margin-inline: auto;
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 16px;
 }
 
 .site-wrapper {
@@ -152,9 +156,26 @@ img {
   vertical-align: top;
 }
 
-.container {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  padding-inline: 16px;
+h1 {
+  font-size: 64px;
+  line-height: 1.18;
+  font-weight: 600px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.23;
+  font-weight: 600px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.28;
+  font-weight: 700px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600px;
 }
