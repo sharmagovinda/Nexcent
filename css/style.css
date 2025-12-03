@@ -302,6 +302,7 @@ p {
 
 .hero-banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -311,4 +312,51 @@ p {
 .content,
 .banner-image {
   width: calc(50%-20px);
+}
+
+.banner-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(40% - 20px);
+}
+
+.content{
+  width: calc(60% - 20px);
+}
+.body-section{
+  display: flex;
+  justify-content: space-between;
+}
+.header-section{
+  text-align: center;
+}
+.my-10{
+  margin: 40px 0;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .content,
+  .banner-image {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 20px);
+  }
+}
+
+/* Mobile large */
+
+@media(max-width:768px){
+
+} 
+/* Mobile small */
+
+@media(max-width:576px){
+
 }
