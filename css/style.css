@@ -189,10 +189,12 @@ h4 {
   }
 }
 
-
-
 p {
   margin: 16px 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Global styles */
@@ -211,7 +213,6 @@ p {
 
 .btn {
   display: inline-block;
-  padding: 14px 32px;
   text-align: center;
   font-weight: 500;
   text-transform: capitalize;
@@ -220,12 +221,58 @@ p {
 }
 
 .btn-primary {
+  padding: 14px 32px;
   color: white;
   background-color: #4CAF4F;
 }
 
+.btn-secondry {
+  padding: 10px 20px;
+  color: white;
+  background-color: #4CAF4F;
+}
+
+
 .btn-primary:hover {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* header Section Styles */
+.site-header {
+  padding: 22px 0;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.main-nav li a{
+  color: #18191F;
+}
+
+.btn-nav {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.login-btn {
+  color: #4CAF4F;
+  font-weight: 500;
+  padding: 10px 20px;
 }
 
 /* Hero Banner Section Styles */
