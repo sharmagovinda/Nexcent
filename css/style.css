@@ -109,7 +109,7 @@ section {
 }
 
 body {
-  line-height: normal;
+  line-height: 1.5;
   background-color: #fff;
   color: #717171;
   font-family: "Inter", sans-serif;
@@ -138,19 +138,6 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  max-width: 1184px;
-  width: 100%;
-  margin: 0 auto;
-  padding-inline: 16px;
-}
-
-.site-wrapper {
-  position: relative;
-  overflow: hidden;
-  min-width: 320px;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -160,60 +147,94 @@ img {
 h1 {
   font-size: 64px;
   line-height: 1.18;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 36px;
   line-height: 1.23;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 28px;
   line-height: 1.28;
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 h4 {
   font-size: 20px;
   line-height: 1.4;
-  font-weight: 600px;
+  font-weight: 600;
 }
+
+p {
+  margin: 16px 0;
+}
+
+/* Global styles */
+.container {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.site-wrapper {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration-line: none;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #4CAF4F;
+}
+
+/* Hero Banner Section Styles */
 
 .bg-gray {
   background-color: #F5F7FA;
 }
 
-h1{
+h1 {
   color: #000000;
 }
-span{
-  color:#4CAF4F ;
+
+span {
+  color: #4CAF4F;
 }
-p{
+
+p {
   margin-top: 16px;
   margin-bottom: 32px;
 }
 
-.content{
+.content {
   width: 100%;
   max-width: 657px;
 }
 
 
-.hero-banner{
+.hero-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   min-height: 599px;
 }
-.content,
-.banner-image{
-  width: calc(50%-20px);
-}
 
-.bg-gray{
-  background: #F5F7FA;
+.content,
+.banner-image {
+  width: calc(50%-20px);
 }
