@@ -207,16 +207,13 @@ p{
   justify-content: center;
   align-items: center;
   gap: 40px;
+  min-height: 599px;
 }
 .content,
 .banner-image{
   width: calc(50%-20px);
 }
-.hero-container{
-  padding: 100px 0;
-}
 
 .bg-gray{
   background: #F5F7FA;
-  margin: ;
 }
