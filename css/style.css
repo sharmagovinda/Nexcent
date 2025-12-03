@@ -112,7 +112,7 @@ body {
   line-height: normal;
   background-color: #fff;
   color: #717171;
-  font-family: inter sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 ol,
@@ -183,4 +183,40 @@ h4 {
 
 .bg-gray {
   background-color: #F5F7FA;
+}
+
+h1{
+  color: #000000;
+}
+span{
+  color:#4CAF4F ;
+}
+p{
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.content{
+  width: 100%;
+  max-width: 657px;
+}
+
+
+.hero-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.content,
+.banner-image{
+  width: calc(50%-20px);
+}
+.hero-container{
+  padding: 100px 0;
+}
+
+.bg-gray{
+  background: #F5F7FA;
+  margin: ;
 }
