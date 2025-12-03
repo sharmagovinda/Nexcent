@@ -315,9 +315,6 @@ p {
 }
 
 .banner-image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: calc(40% - 20px);
 }
 
