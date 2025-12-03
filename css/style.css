@@ -168,6 +168,29 @@ h4 {
   font-weight: 600;
 }
 
+/* for laptop */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+/* for tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+
+/* for Mobile */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+
+
 p {
   margin: 16px 0;
 }
@@ -199,6 +222,10 @@ p {
 .btn-primary {
   color: white;
   background-color: #4CAF4F;
+}
+
+.btn-primary:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Hero Banner Section Styles */
