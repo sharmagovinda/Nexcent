@@ -168,10 +168,6 @@ h4 {
   font-weight: 600;
 }
 
-p {
-  margin: 16px 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -332,8 +328,8 @@ span {
 }
 
 p {
-  margin-top: 16px;
-  margin-bottom: 32px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .content {
@@ -369,8 +365,15 @@ p {
   justify-content: space-between;
 }
 
-.header-section {
+.header-block {
+  max-width: 542px;
+  margin: 0 auto;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.header-block h2 {
+  color: #4D4D4D;
 }
 
 .my-10 {
