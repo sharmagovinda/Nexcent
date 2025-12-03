@@ -112,6 +112,7 @@ body {
   line-height: normal;
   background-color: #fff;
   color: #717171;
+  font-family: inter sans-serif;
 }
 
 ol,
@@ -180,7 +181,6 @@ h4 {
   font-weight: 600px;
 }
 
-h1{
-  color: red;
-  font-family: "Inter" ,sans-serif;
+.bg-gray {
+  background-color: #F5F7FA;
 }
