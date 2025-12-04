@@ -334,13 +334,12 @@ p {
 
 
 /* Hero Banner sections */
-.hero-banner {
+.hero-banner ,.content-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   gap: 40px;
-  min-height: 599px;
+  min-height: 740px;
 }
 
 /* Hero Content Text Section */
@@ -349,8 +348,11 @@ p {
   max-width: 657px;
 }
 /* Hero Habber Images Section calculated the width of the image */
-.banner-image {
+.banner-image,.content-img {
+  display: flex;
+  justify-content: end;
   width: calc(40% - 20px);
+  transform: translate(20px, 15px);
 }
 /* Hero Content Text Calculated the width for this section */
 
@@ -366,12 +368,15 @@ p {
   
 }
 
+/* For the multi purpose header block for the all the header sections */
+
 .header-block {
   max-width: 542px;
   margin: 0 auto;
   margin-bottom: 40px;
   text-align: center;
 }
+/* For the all the header section h2 color */
 
 .header-block h2 {
   color: #4D4D4D;
@@ -380,6 +385,15 @@ p {
 .my-10 {
   margin: 40px 0;
 }
+/* This is the contetn wrapper for the media left and the the content right */
+
+/* .content-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} */
+
 
 
 /* Tablet */
