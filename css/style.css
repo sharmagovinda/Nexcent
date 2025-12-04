@@ -334,12 +334,13 @@ p {
 
 
 /* Hero Banner sections */
-.hero-banner ,.content-wrap {
+.hero-banner {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
   min-height: 740px;
+  margin-bottom: 20px;
 }
 
 /* Hero Content Text Section */
@@ -347,8 +348,20 @@ p {
   width: 100%;
   max-width: 657px;
 }
+.content-text h1{
+  transform: translate(0px, 25px);
+  word-spacing: 22px;
+}
+.content-text p{
+  padding-top: 40px;
+}
+.content-text a{
+  margin-top:12px ;
+    
+}
+
 /* Hero Habber Images Section calculated the width of the image */
-.banner-image,.content-img {
+.banner-image {
   display: flex;
   justify-content: end;
   width: calc(40% - 20px);
@@ -387,22 +400,32 @@ p {
 }
 /* This is the contetn wrapper for the media left and the the content right */
 
-/* .content-wrap{
+.content-wrap{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-} */
+  gap:40px
+}
+
+/* About Image Sections  */
+.content-img{
+  display: flex;
+  justify-content: start;
+  width: calc(40% - 20px);
+  transform: translate(20px, 36px);
+}
 
 
 
 /* Tablet */
 @media (max-width: 1024px) {
-
-  .content-text,
+/* when this class of content is below 1024px ther content become 100%(which it takes full width) */
+  .content-text,.content-img,
   .banner-image {
     width: calc(100% - 20px);
   }
+
 
   .main-nav ul {
     display: none;
