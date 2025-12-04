@@ -407,7 +407,8 @@ p {
   justify-content: start;
   width: calc(40% - 20px);
 }
-.content-wraps{
+
+.content-wraps {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -425,7 +426,7 @@ p {
   margin-bottom: 40px;
 }
 
-.card{
+.card {
   width: 300px;
   padding: 24px 28px;
   text-align: center;
@@ -463,13 +464,15 @@ p {
   border-radius: 18px 5px 10px 5px;
   background: #e8f5e9;
 }
+
 .container-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   padding: 60px 0;
 }
-.content-text-button{
+
+.content-text-button {
   width: calc(60% - 20px);
   padding: 30px 0;
   display: flex;
@@ -477,6 +480,7 @@ p {
   align-items: start;
   justify-content: center;
 }
+
 .content-service-section {
   width: calc(50% - 20px);
   display: flex;
@@ -484,6 +488,7 @@ p {
   justify-content: space-between;
   padding: 20px;
 }
+
 .service {
   width: calc(50% - 30px);
   display: flex;
@@ -492,7 +497,7 @@ p {
 }
 
 /* Testimonial section start */
-.testimonial-wrap{
+.testimonial-wrap {
   display: flex;
   flex-wrap: wrap;
   padding-top: 30px;
@@ -501,34 +506,39 @@ p {
   margin-bottom: 40px;
   padding-bottom: 48px;
 }
-.testimonial-image{
+
+.testimonial-image {
   width: calc(30% - 20px);
   overflow: hidden;
   box-shadow: 5px px 30px rgba(0, 0, 0, 0.363);
   height: 326px;
   border-radius: 8px;
 }
-.testimonial-image img{
+
+.testimonial-image img {
   width: 100%;
   border-radius: 6px;
 }
 
-.testimonial-content{
-  width:calc(70% - 20px)
+.testimonial-content {
+  width: calc(70% - 20px)
 }
-.author{
+
+.author {
   color: #4caf4f;
   font-size: 20px;
   font-weight: 600;
 }
-.testimonial-our-client-logos-section{
+
+.testimonial-our-client-logos-section {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.testimonial-our-client-logos-section a{
+
+.testimonial-our-client-logos-section a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -541,24 +551,25 @@ p {
 /* Testimonial section End */
 
 /* Caring Blog marketing Section start here */
-.blog-conainer{
+.blog-conainer {
   margin-bottom: 100px;
 }
-.blog-3-row{
+
+.blog-3-row {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-.cards{
-  width:368px ;
+.cards {
+  width: 368px;
   /* width: calc(33.33% - 27px); */
   border-radius: 8px;
   position: relative;
   margin-bottom: 100px;
 }
 
-.blog-content-text{
+.blog-content-text {
   background: #F5F7FA;
   max-width: 317px;
   position: absolute;
@@ -572,10 +583,10 @@ p {
   align-items: center;
   text-align: center;
   transform: translate(0px, 60px);
-  box-shadow:1px 10px 20px rgba(128, 128, 128, 0.492) ;
+  box-shadow: 1px 10px 20px rgba(128, 128, 128, 0.492);
 }
 
-.blog-content-text a{
+.blog-content-text a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -588,12 +599,74 @@ p {
 /* Caring Blog marketing Section end here */
 
 /* this is the button icon the the footer Text section */
-.btn-icon{
+.btn-icon {
   fill: red;
+}
+
+
+
+/* footer styles */
+
+.site-footer {
+  background: #263238;
+  padding: 64px 0;
+  color: #F5F7FA;
+  font-size: 14px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: calc(45% - 10px);
+}
+
+.social-networks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-item {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-col-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: calc(55% - 10px);
+}
+
+.listing h4,
+.newsletter h4 {
+  margin-bottom: 24px;
+}
+
+.listing ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
+
   .content-text-button,
   .content-text,
   .content-img,
@@ -620,17 +693,38 @@ p {
   .card {
     width: calc(50% - 10px);
   }
+
   .content-service-section {
     width: calc(100% - 0px);
   }
+
   .testimonial-image,
-  .testimonial-content{
-  width: calc(50% - 20px);
-}
+  .testimonial-content {
+    width: calc(50% - 20px);
+  }
+
+  .footer-row {
+    gap: 40px;
+  }
+
+  .footer-col-left {
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-col-right {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .social-networks {
+    justify-content: center;
+  }
 
 }
 
-/* Mobile large */
+/* Tablet device */
 @media (max-width: 768px) {
   h1 {
     font-size: 42px;
@@ -640,23 +734,35 @@ p {
     justify-content: center;
     gap: 60px;
   }
+
   .card {
     width: 100%;
   }
-  .testimonial-image{
-  width: 100%;
-  min-height: 326px;
-}
-.service{
-  display: flex;
+
+  .testimonial-image {
+    width: 100%;
+    min-height: 326px;
+  }
+
+  .service {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-.testimonial-image,
-.testimonial-content
-{
-  width: 100%;
-}
+  }
+
+  .testimonial-image,
+  .testimonial-content {
+    width: 100%;
+  }
+
+  .listing {
+    width: calc(30% - 10px);
+  }
+
+  .newsletter {
+    width: 100%;
+    text-align: center;
+  }
 
 }
 
@@ -677,19 +783,25 @@ p {
   h1 {
     font-size: 36px;
   }
+
   /* service sections */
   .service {
     width: calc(100% - 0px);
     padding: 20px 0;
   }
-  
-  .blog-content-text{
-  bottom: -35px;
-  left: 0px;
-  max-width: 326px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  
-}
+
+  .blog-content-text {
+    bottom: -35px;
+    left: 0px;
+    max-width: 326px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+  }
+
+  .listing {
+    width: calc(50% - 10px)
+  }
+
 }
