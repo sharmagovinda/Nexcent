@@ -413,7 +413,7 @@ p {
 }
 
 .card {
-  max-width: 300px;
+  width: 300px;
   padding: 24px 28px;
   text-align: center;
   border-radius: 8px;
@@ -471,6 +471,14 @@ p {
     font-size: 50px;
   }
 
+  .col-3-row {
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(50% - 10px);
+  }
+
 }
 
 /* Mobile large */
@@ -482,6 +490,11 @@ p {
   .our-client-logos-section {
     justify-content: center;
     gap: 60px;
+  }
+
+
+  .card {
+    width: 100%;
   }
 }
 
@@ -503,4 +516,5 @@ p {
   h1 {
     font-size: 36px;
   }
+
 }
