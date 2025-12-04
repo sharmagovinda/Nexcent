@@ -332,12 +332,8 @@ p {
   margin-bottom: 16px;
 }
 
-.content {
-  width: 100%;
-  max-width: 657px;
-}
 
-
+/* Hero Banner sections */
 .hero-banner {
   display: flex;
   flex-wrap: wrap;
@@ -347,28 +343,33 @@ p {
   min-height: 599px;
 }
 
-.content,
-.banner-image {
-  width: calc(50%-20px);
+/* Hero Content Text Section */
+.content-text {
+  width: 100%;
+  max-width: 657px;
 }
-
+/* Hero Habber Images Section calculated the width of the image */
 .banner-image {
   width: calc(40% - 20px);
 }
+/* Hero Content Text Calculated the width for this section */
 
-.content {
+.content-text {
   width: calc(60% - 20px);
 }
-
-.body-section {
+/* Out Clients Logos Sections */
+.our-client-logos-section{
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
+  
 }
 
 .header-block {
   max-width: 542px;
   margin: 0 auto;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -384,7 +385,7 @@ p {
 /* Tablet */
 @media (max-width: 1024px) {
 
-  .content,
+  .content-text,
   .banner-image {
     width: calc(100% - 20px);
   }
@@ -408,12 +409,20 @@ p {
   h1 {
     font-size: 42px;
   }
+  .our-client-logos-section{
+    justify-content: center;
+    gap: 60px;
+  }
 }
 
 /* Mobile small */
 @media(max-width:576px) {
   .btn-nav a {
     display: none;
+  }
+  .our-client-logos-section{
+    gap: 30px;
+
   }
 
   nav.active ul {
