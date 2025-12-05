@@ -318,11 +318,8 @@ nav.active ul {
   background-color: #f5f7fa;
 }
 
-h1 {
-  color: #000000;
-}
 
-span {
+.text-green {
   color: #4caf4f;
 }
 
@@ -345,14 +342,15 @@ p {
   flex-wrap: wrap;
   justify-content: start;
   gap: 50px;
-}
-
-.hero-content-text {
-  width: calc(60% - 25px);
+  color: #4D4D4D;
 }
 
 .btn-wrap {
   margin-top: 32px;
+}
+
+.hero-content-text {
+  width: calc(60% - 25px);
 }
 
 .banner-image {
@@ -388,6 +386,10 @@ p {
 
 .my-10 {
   margin: 40px 0;
+}
+
+.py-16 {
+  padding: 64px 0;
 }
 
 /* This is the contetn wrapper for the media left and the the content right */
@@ -490,20 +492,32 @@ p {
   font-size: 14px;
 }
 
-.content-service-section {
-  width: calc(50% - 20px);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
+/* Helping a local section styles */
+
+.col-left {
+  width: calc(50% - 25px);
 }
 
-.service {
-  width: calc(50% - 30px);
+.col-right {
+  width: calc(50% - 25px);
   display: flex;
-  gap: 30px;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 40px;
 }
+
+.item {
+  width: calc(50% - 15px);
+  display: flex;
+  justify-content: start;
+  gap: 16px;
+}
+
+.col-left-content-wrap {
+  max-width: 390px;
+}
+
 
 /* Testimonial section start */
 .testimonial-wrap {
@@ -578,32 +592,7 @@ p {
   margin-bottom: 100px;
 }
 
-.blog-content-text {
-  background: #F5F7FA;
-  max-width: 317px;
-  position: absolute;
-  bottom: -40px;
-  left: 30px;
-  padding: 16px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transform: translate(0px, 60px);
-  box-shadow: 1px 10px 20px rgba(128, 128, 128, 0.492);
-}
 
-.blog-content-text a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #4caf4f;
-}
 
 /* Caring Blog marketing Section end here */
 
@@ -773,6 +762,19 @@ form {
     justify-content: center;
   }
 
+  .col-left,
+  .col-right {
+    width: 100%;
+  }
+
+  .item {
+    justify-content: center;
+  }
+
+  .col-left-content-wrap {
+    max-width: none;
+  }
+
 }
 
 /* Tablet device */
@@ -849,20 +851,14 @@ form {
     font-size: 36px;
   }
 
+  .item {
+    width: 100%;
+  }
+
   /* service sections */
   .service {
     width: calc(100% - 0px);
     padding: 20px 0;
-  }
-
-  .blog-content-text {
-    bottom: -35px;
-    left: 0px;
-    max-width: 326px;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-
   }
 
   .listing {
