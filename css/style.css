@@ -664,7 +664,49 @@ p {
   gap: 12px;
 }
 
-/* Tablet */
+.listing ul a {
+  color: #F5F7FA;
+}
+
+
+
+input {
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #D9DBE1;
+}
+
+input::placeholder {
+  color: #D9DBE1;
+}
+
+input:focus {
+  outline: none;
+}
+
+form {
+  position: relative;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.send-btn {
+  background: transparent;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  right: 5px;
+  top: 10px;
+}
+
+
+
+/* laptop */
 @media (max-width: 1024px) {
 
   .content-text-button,
@@ -802,6 +844,11 @@ p {
 
   .listing {
     width: calc(50% - 10px)
+  }
+
+  .listing h4,
+  .newsletter h4 {
+    margin-bottom: 16px;
   }
 
 }
