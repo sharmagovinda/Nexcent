@@ -208,7 +208,11 @@ a {
 }
 
 .btn-primary:hover {
-  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+}
+
+.btn-secondry:hover {
+  text-decoration: underline;
 }
 
 /* header Section Styles */
@@ -257,6 +261,10 @@ a {
   color: #4caf4f;
   font-weight: 500;
   padding: 10px 20px;
+}
+
+.login-btn:hover {
+  text-decoration: underline;
 }
 
 .btn-nav button {
@@ -382,6 +390,10 @@ p {
 
 .header-block h2 {
   color: #4d4d4d;
+}
+
+.header-block p {
+  margin-top: 8px;
 }
 
 .my-10 {
@@ -512,94 +524,154 @@ p {
   display: flex;
   justify-content: start;
   gap: 16px;
+  align-items: center;
 }
 
-.col-left-content-wrap {
-  max-width: 390px;
+.col-left-content-wrap .text-green {
+  display: block;
+}
+
+/* how to design section styles */
+.how-to-design .col-2-img {
+  padding: 0;
 }
 
 
-/* Testimonial section start */
-.testimonial-wrap {
+/* Tim smith section start */
+.tim-smith-section {
+  padding: 32px 0;
+}
+
+.tim-smith-row {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
-  gap: 40px;
+  gap: 78px;
   justify-content: center;
-  margin-bottom: 40px;
-  padding-bottom: 48px;
 }
 
-.testimonial-image {
-  width: calc(30% - 20px);
+.tim-smith-col-image {
+  width: calc(30% - 39px);
   overflow: hidden;
-  box-shadow: 5px px 30px rgba(0, 0, 0, 0.363);
-  height: 326px;
   border-radius: 8px;
 }
 
-.testimonial-image img {
+.tim-smith-col-image img {
   width: 100%;
-  border-radius: 6px;
 }
 
-.testimonial-content {
-  width: calc(70% - 20px)
+.tim-smith-col-content {
+  width: calc(70% - 39px);
 }
 
-.author {
+.tim-smith-col-content h4 {
   color: #4caf4f;
-  font-size: 20px;
-  font-weight: 600;
+  margin-bottom: 8px;
 }
 
-.testimonial-our-client-logos-section {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.tim-smith-col-content p {
+  margin-top: 0px;
+}
+
+.tim-smith-col-content span {
+  display: block;
+  color: #89939E;
+}
+
+.tim-smith-col-content .logos-row {
+  padding: 0px;
+  margin-top: 32px;
   align-items: center;
-  justify-content: space-between;
 }
 
-.testimonial-our-client-logos-section a {
+.icon-btn {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 20px;
-  font-weight: 600;
+  gap: 5px;
   color: #4caf4f;
+  align-items: center;
+}
+
+.icon-btn a {
+  color: #4caf4f;
+}
+
+.icon-btn a:hover {
+  text-decoration: underline;
 }
 
 /* Testimonial section End */
 
 /* Caring Blog marketing Section start here */
-.blog-conainer {
+.blog-container {
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
-.blog-3-row {
-  display: flex;
+.blog-container .header-block {
+  max-width: 650px;
+}
+
+.blog-container .col-3-row {
+  justify-content: start;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
-.cards {
-  width: 368px;
-  /* width: calc(33.33% - 27px); */
-  border-radius: 8px;
+.box {
+  width: calc(33.33% - 28px);
+}
+
+.box figure img {
+  width: 100%;
+}
+
+.box-content {
+  width: 80%;
+  text-align: center;
+  margin-inline: auto;
+  padding: 16px;
+  margin-top: -90px;
   position: relative;
-  margin-bottom: 100px;
+  border-radius: 8px;
+  background: #F5F7FA;
+  box-shadow: 0 8px 16px 0 rgba(171, 190, 209, 0.40);
 }
 
-
-
-/* Caring Blog marketing Section end here */
-
-/* this is the button icon the the footer Text section */
-.btn-icon {
-  fill: red;
+.box-content p {
+  margin: 0px;
 }
+
+.box-content .icon-btn {
+  margin-top: 8px;
+}
+
+.content-block {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.content-block h2 {
+  font-size: 64px;
+  color: #4d4d4d;
+}
+
+.content-block .icon-btn {
+  margin-top: 32px;
+}
+
+.content-block .icon-btn a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.content-block .icon-btn img {
+  filter: brightness(0) invert(1);
+}
+
 
 
 
@@ -698,6 +770,7 @@ form {
   z-index: 1;
   right: 5px;
   top: 10px;
+  cursor: pointer;
 }
 
 
@@ -705,6 +778,9 @@ form {
 /* laptop */
 @media (max-width: 1024px) {
 
+  .content-block h2 {
+    font-size: 44px;
+  }
 
   .my-10 .col-2-content {
     padding: 0;
@@ -734,8 +810,16 @@ form {
     width: calc(50% - 10px);
   }
 
+  .col-left-content-wrap .text-green {
+    display: inline;
+  }
+
   .content-service-section {
     width: calc(100% - 0px);
+  }
+
+  .box {
+    width: calc(50% - 20px);
   }
 
   .testimonial-image,
@@ -775,12 +859,29 @@ form {
     max-width: none;
   }
 
+  .tim-smith-col-image,
+  .tim-smith-col-content {
+    width: 100%;
+  }
+
+  .tim-smith-row {
+    gap: 20px;
+  }
+
 }
 
 /* Tablet device */
 @media (max-width: 768px) {
   h1 {
     font-size: 42px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .content-block h2 {
+    font-size: 28px;
   }
 
   .hero-content-text {
@@ -851,6 +952,14 @@ form {
     font-size: 36px;
   }
 
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
   .item {
     width: 100%;
   }
@@ -868,6 +977,10 @@ form {
   .listing h4,
   .newsletter h4 {
     margin-bottom: 16px;
+  }
+
+  .box {
+    width: 100%;
   }
 
 }
