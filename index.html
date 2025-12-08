@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,47 +9,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
+  <!-- Start site wrapper -->
   <div class="site-wrapper">
-
+    <!-- Start site header -->
     <header class="site-header bg-gray">
-
-      <div class="container navbar id=" navBar"">
-        <a href="#">
-          <img src="./images/site-header-logo.png" alt="Logo">
+      <div class="container navbar" id="navBar">
+        <!-- Start site logo -->
+        <a href="#" class="site-logo">
+          <img src="./images/site-logo.png" alt="Nexcent" width="155" height="24">
         </a>
-
-        <nav class="main-nav" id="site-navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </nav>
-
-        <div class="btn-nav">
-          <a href="#" class="btn login-btn">Login</a>
-          <a href="#" class="btn btn-secondry">Sign up</a>
-          <button id="hamburger" class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+        <!-- End site logo -->
+        <div class="header-right" id="site-navigation">
+          <!-- Start main navigation -->
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <!-- End main navigation -->
+          <!-- Start btn nav -->
+          <div class="btn-nav">
+            <a href="#" class="btn btn-default">Login</a>
+            <a href="#" class="btn btn-primary btn-primary-sm">Sign up</a>
+          </div>
+          <!-- End btn nav -->
         </div>
-
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-
     </header>
-
+    <!-- End site header -->
+    <!-- Start site content -->
     <main class="site-content">
-
+      <!-- Start hero banner -->
       <section class="bg-gray hero-banner">
-        <div class="container col-2-row">
+        <div class="container two-column">
           <div class="hero-content-text">
             <h1>Lessons and insights <span class="text-green">from 8 years</span></h1>
             <p>Where to grow your business as a photographer: site or social media?</p>
@@ -63,16 +65,15 @@
           </figure>
         </div>
       </section>
-
-      <section class="my-10">
+      <!-- End hero banner -->
+      <!-- Start logos-block -->
+      <section class="my-10 logos-block">
         <div class="container">
-
           <header class="header-block">
             <h2>Our Clients</h2>
             <p>We have been working with some Fortune 500+ clients</p>
           </header>
-
-          <div class="logos-row">
+          <div class="logos-holder">
             <figure>
               <img src="images/partner-logo-1.png" alt="">
             </figure>
@@ -91,20 +92,21 @@
             <figure>
               <img src="images/partner-logo-6.png" alt="">
             </figure>
+            <figure>
+              <img src="images/partner-logo-3.png" alt="">
+            </figure>
           </div>
-
         </div>
       </section>
-
-      <section class="my-10">
+      <!-- End logos-block -->
+      <!-- Start cards block -->
+      <section class="my-10 cards-block">
         <div class="container">
           <header class="header-block">
             <h2>Manage your entire community in a single system</h2>
             <p>Who is Nextcent suitable for?</p>
           </header>
-
-          <div class="col-3-row">
-
+          <div class="three-column">
             <div class="card">
               <figure class="card-icon">
                 <img src="images/icon-membership-organisations.svg" alt="">
@@ -112,7 +114,6 @@
               <h3>Membership Organisations</h3>
               <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
-
             <div class="card">
               <figure class="card-icon">
                 <img src="images/icon-national.svg" alt="">
@@ -120,7 +121,6 @@
               <h3>National Associations</h3>
               <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
-
             <div class="card">
               <figure class="card-icon">
                 <img src="images/icon-clubs-groups.svg" alt="">
@@ -128,20 +128,17 @@
               <h3>Clubs And <br> Groups</h3>
               <p>Our membership management software provides full automation of membership renewals and payments</p>
             </div>
-
           </div>
-
         </div>
       </section>
-
-      <section class="my-10">
-        <div class="container col-2-row">
-
-          <figure class="col-2-img">
+      <!-- End cards block -->
+      <!-- Start media content -->
+      <section class="my-10 media-content">
+        <div class="container two-column">
+          <figure class="media-content-img">
             <img src="images/img-about.png" alt="">
           </figure>
-
-          <div class="col-2-content">
+          <div class="media-content-text">
             <h2>The unseen of spending three years at Pixelgrade</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam
               vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique
@@ -151,20 +148,16 @@
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
-
         </div>
       </section>
-
-      <section class="bg-gray py-16">
-        <div class="container col-2-row">
-
-          <div class="col-left">
-            <div class="col-left-content-wrap">
-              <h2>Helping a local <span class="text-green">business reinvent itself</span></h2>
-              <p>We reached here with our hard work and dedication</p>
-            </div>
-          </div>
-
+      <!-- End media content -->
+      <!-- Start stats block -->
+      <section class="bg-gray py-16 stats-block">
+        <div class="container two-column">
+          <header class="col-left">
+            <h2>Helping a local <span class="text-green">business reinvent itself</span></h2>
+            <p>We reached here with our hard work and dedication</p>
+          </header>
           <div class="col-right">
             <div class="item">
               <figure>
@@ -177,7 +170,7 @@
             </div>
             <div class="item">
               <figure>
-                <img src="images/icon-clubs-groups.svg" alt="">
+                <img src="images/icon-stats-clubs-groups.svg" alt="">
               </figure>
               <div>
                 <h3>46,328</h3>
@@ -203,18 +196,16 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
-
-      <section class="my-10 how-to-design">
-        <div class="container col-2-row">
-
-          <figure class="col-2-img">
+      <!-- End stats block -->
+      <!-- Start media content -->
+      <section class="my-10 media-content">
+        <div class="container two-column">
+          <figure class="media-content-img py-0">
             <img src="images/img-design.png" alt="">
           </figure>
-
-          <div class="col-2-content">
+          <div class="media-content-text">
             <h2>How to design your site footer like we did</h2>
             <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa
               nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
@@ -226,18 +217,16 @@
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
-
         </div>
       </section>
-
-      <section class="bg-gray my-10 tim-smith-section">
-        <div class="container tim-smith-row">
-
-          <figure class="tim-smith-col-image">
+      <!-- End media content -->
+      <!-- Start review block -->
+      <section class="bg-gray my-10 review-block">
+        <div class="container review-holder">
+          <figure class="review-image">
             <img src="images/img-testimonial.jpg" alt="">
           </figure>
-
-          <div class="tim-smith-col-content">
+          <div class="review-content">
             <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
               tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim.
               Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi
@@ -247,8 +236,7 @@
               dignissim finibus ac sit amet magna.</p>
             <h4>Tim Smith</h4>
             <span>British Dragon Boat Racing Association</span>
-
-            <div class="logos-row">
+            <div class="logos-holder">
               <figure>
                 <img src="images/partner-logo-1.png" alt="">
               </figure>
@@ -264,118 +252,106 @@
               <figure>
                 <img src="images/partner-logo-5.png" alt="">
               </figure>
+              <figure>
+                <img src="images/partner-logo-6.png" alt="">
+              </figure>
               <div class="icon-btn">
                 <a href="" class="btn ">Meet all customers</a>
                 <img src="images/icon-right-arrow.svg" alt="">
               </div>
-
             </div>
-
           </div>
-
         </div>
       </section>
-
-      <section class="blog-container">
+      <!-- End review block -->
+      <!-- Start cards block alt -->
+      <section class="cards-block-alt">
         <div class="container">
-          <div class="header-block">
+          <header class="header-block">
             <h2>Caring is the new marketing</h2>
             <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See
               who's joining the community, read about how our community are increasing their membership income and lot's
               more.​</p>
-          </div>
-          <div class="col-3-row">
-
+          </header>
+          <div class="three-column">
             <div class="box">
               <figure>
                 <img src="images/img-blog-1.png" alt="">
               </figure>
               <div class="box-content">
-                <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+                <h4>Creating Streamlined Safeguarding Processes with OneRen</h4>
                 <div class="icon-btn">
                   <a href="" class="btn ">Readmore</a>
                   <img src="images/icon-right-arrow.svg" alt="">
                 </div>
               </div>
             </div>
-
             <div class="box">
               <figure>
                 <img src="images/img-blog-2.png" alt="">
               </figure>
               <div class="box-content">
-                <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+                <h4>What are your safeguarding responsibilities and how can you manage them?</h4>
                 <div class="icon-btn">
                   <a href="" class="btn ">Readmore</a>
                   <img src="images/icon-right-arrow.svg" alt="">
                 </div>
               </div>
             </div>
-
             <div class="box">
               <figure>
                 <img src="images/img-blog-3.png" alt="">
               </figure>
               <div class="box-content">
-                <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+                <h4>Revamping the Membership Model with Triathlon Australia</h4>
                 <div class="icon-btn">
-                  <a href="" class="btn ">Readmore</a>
+                  <a href="" class="btn">Readmore</a>
                   <img src="images/icon-right-arrow.svg" alt="">
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
-
-      <section class="bg-gray ">
-        <div class="container">
-          <div class="content-block">
-            <h2>Pellentesque suscipit fringilla libero eu.</h2>
-            <div class="icon-btn">
-              <a href="" class="btn btn-primary"> Get a Demo <img src="images/icon-right-arrow.svg" alt=""></a>
-            </div>
+      <!-- End cards block alt -->
+      <!-- Start cta block -->
+      <section class="bg-gray cta-block">
+        <div class="container cta-holder">
+          <h2>Pellentesque suscipit fringilla libero eu.</h2>
+          <div class="icon-btn">
+            <a href="" class="btn btn-primary"> Get a Demo <img src="images/icon-right-arrow.svg" alt=""></a>
           </div>
         </div>
       </section>
-
+      <!-- End cta block -->
     </main>
-
+    <!-- End site content -->
+    <!-- Start site footer -->
     <footer class="site-footer">
       <div class="container">
         <div class="footer-row">
-
           <div class="footer-col-left">
             <figure>
               <img src="images/site-footer-logo.png" alt="">
             </figure>
-            <p>Copyright © 2020 Nexcent ltd.<br>All rights reserved</p>
+            <p>Copyright &copy; 2020 Nexcent ltd.<br>All rights reserved</p>
             <div class="social-networks">
-              <a href="#">
-                <span class="social-item">
+              <a href="#" class="social-item">
                   <img src="images/icon-instagram.svg" alt="">
-                </span>
               </a>
-              <a href="#">
-                <span class="social-item">
+              <a href="#" class="social-item">
                   <img src="images/icon-glob.svg" alt="">
-                </span>
               </a>
-              <a href="#">
-                <span class="social-item">
+              <a href="#" class="social-item">
                   <img src="images/icon-twitter.svg" alt="">
-                </span>
               </a>
-              <a href="#">
-                <span class="social-item">
+              <a href="#" class="social-item">
                   <img src="images/icon-youtube.svg" alt="">
-                </span>
               </a>
             </div>
           </div>
           <div class="footer-col-right">
-            <div class="listing">
+            <div class="footer-links">
               <h4>Company</h4>
               <ul>
                 <li><a href="#">About us</a></li>
@@ -385,7 +361,7 @@
                 <li><a href="">Testimonials</a></li>
               </ul>
             </div>
-            <div class="listing">
+            <div class="footer-links">
               <h4>Support</h4>
               <ul>
                 <li><a href="#">Help center</a></li>
@@ -397,8 +373,8 @@
             </div>
             <div class="newsletter">
               <h4>Stay up to date</h4>
-              <form>
-                <input type="email" placeholder="Your email address">
+              <form class="newsletter-form" action="#">
+                <input type="email" placeholder="Your email address" class="form-control">
                 <button class="send-btn">
                   <img src="images/paper-plane.svg" alt="send">
                 </button>
@@ -407,9 +383,10 @@
           </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- End site footer -->
+  </div>
+  <!-- End site wrapper -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
