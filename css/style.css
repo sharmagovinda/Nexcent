@@ -513,7 +513,7 @@ p {
 .icon-btn {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 13px;
   color: #4caf4f;
   align-items: center;
 }
@@ -591,7 +591,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 13px;
 }
 
 .cta-holder .icon-btn img {
@@ -891,9 +891,6 @@ p {
   .newsletter {
     width: 100%;
     text-align: center;
-  }
-  .btn-primary{
-    font
   }
 }
 
