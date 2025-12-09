@@ -875,6 +875,9 @@ p {
   .card {
     width: 100%;
   }
+  .icon-btn a{
+    font-size: 16px;
+  }
 
   .media-content-text,
   .media-content-img {
@@ -888,6 +891,9 @@ p {
   .newsletter {
     width: 100%;
     text-align: center;
+  }
+  .btn-primary{
+    font
   }
 }
 
