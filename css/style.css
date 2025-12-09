@@ -111,7 +111,6 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #717171;
-  font-size: 14px;
   font-family: "Inter", "Arial", sans-serif;
 }
 
@@ -375,7 +374,7 @@ p {
 }
 
 .media-content h2 {
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 .media-content-img {
@@ -408,7 +407,7 @@ p {
 }
 
 .card h3 {
-  color: #4D4D4D;
+  color: #4d4d4d;
   margin-bottom: 8px;
 }
 
@@ -502,7 +501,7 @@ p {
 
 .review-content span {
   display: block;
-  color: #89939E;
+  color: #89939e;
 }
 
 .review-content .logos-holder {
@@ -557,8 +556,8 @@ p {
   margin-top: -90px;
   position: relative;
   border-radius: 8px;
-  background: #F5F7FA;
-  box-shadow: 0 8px 16px 0 rgba(171, 190, 209, 0.40);
+  background: #f5f7fa;
+  box-shadow: 0 8px 16px 0 rgba(171, 190, 209, 0.4);
 }
 
 .box-content p {
@@ -603,7 +602,7 @@ p {
 .site-footer {
   background: #263238;
   padding: 64px 0;
-  color: #F5F7FA;
+  color: #f5f7fa;
 }
 
 .footer-row {
@@ -665,7 +664,7 @@ p {
 }
 
 .footer-links ul a {
-  color: #F5F7FA;
+  color: #f5f7fa;
 }
 
 .footer-links ul a:hover {
@@ -686,13 +685,13 @@ p {
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  color: #D9DBE1;
+  color: #d9dbe1;
   width: 100%;
   min-width: 255px;
 }
 
 .form-control::placeholder {
-  color: #D9DBE1;
+  color: #d9dbe1;
 }
 
 .form-control:focus {
@@ -841,13 +840,15 @@ p {
   .review-holder {
     gap: 20px;
   }
-
 }
 
 /* Tablet device */
 @media (max-width: 767px) {
   h1 {
     font-size: 42px;
+  }
+  h4 {
+    font-size: 16px;
   }
 
   h2 {
@@ -888,12 +889,10 @@ p {
     width: 100%;
     text-align: center;
   }
-
 }
 
 /* Mobile small */
 @media (max-width: 576px) {
-
   h1 {
     font-size: 36px;
   }
@@ -915,7 +914,7 @@ p {
   }
 
   .footer-links {
-    width: calc(50% - 10px)
+    width: calc(50% - 10px);
   }
 
   .footer-links h4,
@@ -926,5 +925,4 @@ p {
   .box {
     width: 100%;
   }
-
 }
